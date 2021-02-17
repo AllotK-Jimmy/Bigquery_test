@@ -1,0 +1,4 @@
+What are the matching county names from both the databases?
+
+SELECT * FROM `bigquery-public-data.covid19_usafacts.confirmed_cases` inner join `bigquery-public-data.covid19_usafacts.deaths` 
+on `bigquery-public-data.covid19_usafacts.confirmed_cases`.county_name=`bigquery-public-data.covid19_usafacts.deaths`.county_name limit 10
