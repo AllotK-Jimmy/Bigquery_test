@@ -1,0 +1,3 @@
+What is the maximum report number from the data?
+
+SELECT MAX(report_number) FROM `bigquery-public-data.fda_food.food_events` 
