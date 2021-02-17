@@ -1,0 +1,4 @@
+What all are the rows of county_fips_code from the left table in combination with the matching rows of county_fips_code from the right table of the databases?
+
+SELECT * FROM `bigquery-public-data.covid19_usafacts.confirmed_cases` left join   `bigquery-public-data.covid19_usafacts.deaths` 
+on `bigquery-public-data.covid19_usafacts.confirmed_cases`.county_fips_code=`bigquery-public-data.covid19_usafacts.deaths`.county_fips_code limit 20
