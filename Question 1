@@ -1,0 +1,3 @@
+What is the average consumer age from the selected data?
+
+SELECT avg(consumer_age) FROM `bigquery-public-data.fda_food.food_events` LIMIT 10
