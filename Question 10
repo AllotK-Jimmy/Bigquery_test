@@ -1,0 +1,4 @@
+What all are the rows of state which includes matching and not matching state from both the tables?
+
+SELECT * FROM `bigquery-public-data.covid19_usafacts.confirmed_cases` full outer join  `bigquery-public-data.covid19_usafacts.deaths` 
+on `bigquery-public-data.covid19_usafacts.confirmed_cases`.state=`bigquery-public-data.covid19_usafacts.deaths`.state limit 50
