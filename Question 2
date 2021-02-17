@@ -1,0 +1,4 @@
+What are the results when the 'reactions'= diarrhoea?
+
+
+SELECT * FROM `bigquery-public-data.fda_food.food_events` where reactions = 'DIARRHOEA' LIMIT 10
