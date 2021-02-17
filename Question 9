@@ -1,0 +1,4 @@
+What all are the rows of state_fips_code from the right table in combination withe the matching rows of state_fips_code from the left table?
+
+SELECT * FROM `bigquery-public-data.covid19_usafacts.confirmed_cases` right join    `bigquery-public-data.covid19_usafacts.deaths` 
+on `bigquery-public-data.covid19_usafacts.confirmed_cases`.state_fips_code=`bigquery-public-data.covid19_usafacts.deaths`.state_fips_code limit 50
