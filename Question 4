@@ -1,0 +1,3 @@
+What is the minimum report number from the data?
+
+SELECT min(report_number) FROM `bigquery-public-data.fda_food.food_events` limit 10
